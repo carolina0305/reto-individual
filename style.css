@@ -1,0 +1,47 @@
+p{color: rgb(218, 127, 236);
+}
+.importante{
+    background-color: pink;
+    color: #11b0e0;
+}
+
+#titulo-principal {
+    color: rgb(245, 148, 245);
+    text-align: center;
+}
+    
+/* El contenedor que envuelve los elementos */
+section {
+    display: flex;       /* Activa el modo flexible para sus hijos */
+    flex-wrap: wrap;    /* Si no caben, saltan a la siguiente línea */
+    justify-content: center; /* Centra las tarjetas horizontalmente */
+    gap: 40px;          /* Crea un pasillo de separación entre tarjetas */
+}
+
+/* Las cajas de cada elemento (los article) */
+article {
+    max-width: 500px;       /* Ancho fijo para que parezcan tarjetas */
+    background-color: rgb(173, 238, 247);
+    padding: 70px;
+    border: 5px solid #ec88b2;
+}
+
+/* Estilos normales (para ordenador) */
+article {
+    width: 300px;
+}
+
+/* Estilos para móviles (pantallas de menos de 600px) */
+@media (max-width: 600px) {
+    article {
+        width: 100%; /* La tarjeta ocupa todo el ancho en el móvil */
+    }
+    
+    h1 {
+        font-size: 1.5rem; /* Hacemos el título un poco más pequeño */
+    }
+}
+
+
+
+    
